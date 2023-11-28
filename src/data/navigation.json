@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "linkText": "Home",
+        "link": "/"
+    },
+    {
+        "id": 2,
+        "link": "/about",
+        "linkText": "About"
+    },
+    {
+        "id": 3,
+        "linkText": "Shop",
+        "link": "/shop"
+    },
+    {
+        "id": 5,
+        "linkText": "Add Gallery",
+        "link": "/add-gallery"
+    }
+]
