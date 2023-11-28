@@ -10,14 +10,16 @@ const quickviewtip = <Tooltip>Quick View</Tooltip>;
 const wishlisttip = <Tooltip>Add to Wishlist</Tooltip>;
 
 const Content = () => {
-  const [products, setProducts] = useState([]);
+  const [firstProducts, setFirstProducts] = useState([]);
+  const [secondProducts, setSecondProducts] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:8000/api/v1/pictures")
       .then((response) => response.json())
-      .then((data) => setProducts(data.data));
-
-    console.log(products);
+      .then((data) => {
+        setFirstProducts(data.data.first);
+        setSecondProducts(data.data.second);
+      });
   }, []);
 
   return (
@@ -30,9 +32,109 @@ const Content = () => {
           <div className="col-xl-9 col-lg-8">
             <div className="full-width">
               <div className="row">
-                {products.map((item, i) => {
+                {firstProducts.map((item, i) => {
                   return (
                     <div className="col-lg-4 col-md-6 col-sm-6" key={i}>
+                      <div className="product-box mb-md-20">
+                        <div className="product-img">
+                          <Link to={"/shop-details/" + item.id}>
+                            <img
+                              src={"http://localhost:8000/media/" + item.url}
+                              className="img-fluid full-width"
+                              alt={item.title}
+                            />
+                          </Link>
+                          <div className="button-group">
+                            <OverlayTrigger
+                              placement="left"
+                              overlay={wishlisttip}
+                            >
+                              <Link to="#">
+                                {" "}
+                                <i className="pe-7s-like" />{" "}
+                              </Link>
+                            </OverlayTrigger>
+                          </div>
+                          {/* <div className="cart-hover">
+                  {item.stock === true ? (
+                    <button type="button" className="btn-cart fw-600">
+                      Add To Cart
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      className="btn-cart fw-600"
+                      onClick={handleOutofStock}
+                    >
+                      Add To Cart
+                    </button>
+                  )}
+                </div> */}
+                        </div>
+                        <div className="product-caption text-center">
+                          <div className="product-status">
+                            <ul className="product-raised">
+                              <li>
+                                <strong>Material</strong> {item.material}
+                              </li>
+                              <li>
+                                <strong>Width</strong>
+                                <span className="text-highlight">
+                                  {item.width}mm
+                                </span>
+                              </li>
+                            </ul>
+                            <ul className="product-raised">
+                              <li>
+                                <strong>Price</strong>
+                                {item.sales_value}$
+                              </li>
+                              <li>
+                                <strong>Height</strong>
+                                <span className="text-highlight">
+                                  {item.height}mm
+                                </span>
+                              </li>
+                            </ul>
+                          </div>
+                          <h6 className="product-title fw-500 mt-10">
+                            <Link
+                              to={"/shop-details/" + item.id}
+                              className="text-color-secondary"
+                            >
+                              {item.title}
+                            </Link>
+                          </h6>
+                          <div className="product-money mt-10">
+                            {/* <span className="text-light-green fw-600 fs-16">
+                              $
+                              {new Intl.NumberFormat().format(
+                                (
+                                  (item.price * (100 - item.discount)) /
+                                  100
+                                ).toFixed(2)
+                              )}
+                            </span> */}
+
+                            {/* {item.discount > 0 || item.discount !== "" ? (
+                              <span className="text-price">
+                                $
+                                {new Intl.NumberFormat().format(
+                                  item.price.toFixed(2)
+                                )}
+                              </span>
+                            ) : (
+                              ""
+                            )} */}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+                {secondProducts.map((item, id) => {
+                  return (
+                    <div className="col-lg-4 col-md-6 col-sm-6" key={id}>
                       <div className="product-box mb-md-20">
                         <div className="product-img">
                           <Link to={"/shop-details/" + item.id}>
