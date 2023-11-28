@@ -35,9 +35,13 @@ class PictureView(View):
     def get_all_pictures(request):
         pictures = Gallery.objects.all()
 
-        data = []
+        data = {"first": [], "second": []}
+
         for picture in pictures:
-            data.append(PictureView.get_data(picture))
+            if picture.show_first:
+                data['first'].append(PictureView.get_data(picture))
+            else:
+                data['second'].append(PictureView.get_data(picture))
 
         return data_status(data)
 

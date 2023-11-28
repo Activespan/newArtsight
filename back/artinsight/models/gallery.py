@@ -18,8 +18,25 @@ class Gallery(models.Model):
     description = models.TextField(null=True)
     material = models.CharField(max_length=50)
     purpose = models.CharField(max_length=200)
+    show_first = models.BooleanField(default=False)
 
 
 @admin.register(Gallery)
 class GalleryAdmin(admin.ModelAdmin):
-    pass
+    list_display = (
+        "id", 
+        "user_info",
+        "title",
+        "sales_value",
+        "description",
+        "material",
+        "purpose",
+        "show_first"
+    )
+
+    def user_info(self, obj):
+        if obj.user:
+            return "{} {}".format(obj.user.name, obj.user.surname)
+        return None
+    user_info.short_description = "Artist"
+
