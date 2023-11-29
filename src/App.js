@@ -1,5 +1,6 @@
 import React, { Suspense, useLayoutEffect } from "react";
 import { BrowserRouter as Router, Route, withRouter } from "react-router-dom";
+import Profile from "./components/pages/Profile";
 
 // Home
 const Home = React.lazy(() => import("./components/pages/Home"));
@@ -84,6 +85,13 @@ function App() {
             path="/shop-details/:id"
             component={(props) => (
               <Shopdetails {...props} key={window.location.pathname} />
+            )}
+          />
+          <Route
+            exact
+            path="/profile/:id"
+            component={(props) => (
+              <Profile {...props} key={window.location.pathname} />
             )}
           />
           {/* Pages(Donation) */}

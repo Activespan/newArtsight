@@ -39,9 +39,9 @@ class PictureView(View):
 
         for picture in pictures:
             if picture.show_first:
-                data['first'].append(PictureView.get_data(picture))
+                data["first"].append(PictureView.get_data(picture))
             else:
-                data['second'].append(PictureView.get_data(picture))
+                data["second"].append(PictureView.get_data(picture))
 
         return data_status(data)
 
@@ -50,6 +50,7 @@ class PictureView(View):
         data = {
             "id": picture.id,
             "user": "{} {}".format(picture.user.name, picture.user.surname),
+            "user_id": picture.user.id,
             "title": picture.title,
             "width": picture.width,
             "height": picture.height,

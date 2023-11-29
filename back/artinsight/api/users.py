@@ -100,6 +100,7 @@ class ArtUserView(View):
             "art_type": user.get_art_type_display(),
             "style": user.get_art_type_display(),
             "info": user.info,
+            "avatar": user.avatar.name,
         }
 
         return data_status(data)

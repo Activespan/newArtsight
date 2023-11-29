@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom/cjs/react-router-dom.min";
+import { Link, useParams } from "react-router-dom/cjs/react-router-dom.min";
 
 const Content = () => {
   const { id } = useParams();
@@ -40,7 +40,9 @@ const Content = () => {
             <div className="product-full-des mb-20">
               <p className="text-custom-black fw-600">
                 Author:
-                <span className="text-success ml-2">{item.user}</span>
+                <Link to={`/profile/${item.user_id}`}>
+                  <span className="text-success ml-2">{item.user}</span>
+                </Link>
               </p>
             </div>
             <div className="product-full-des mb-20">
