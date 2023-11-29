@@ -5,7 +5,7 @@ import Breadcrumb from "../layouts/Breadcrumbs";
 import Content from "../sections/shop-details/Content";
 import Footer from "../layouts/Footer";
 
-const pagelocation = "Shop Details";
+const pagelocation = "Product details";
 
 class Shopdetails extends Component {
   render() {
