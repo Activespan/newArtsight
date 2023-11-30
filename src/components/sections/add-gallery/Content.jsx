@@ -133,7 +133,7 @@ const Content = () => {
       body: formData,
     };
 
-    fetch("http://localhost:8000/api/v1/users/register", requestOptions)
+    fetch("http://146.190.165.81:8000/api/v1/users/register", requestOptions)
       .then((response) => response.json())
       .then((data) => history.push("shop"));
   };

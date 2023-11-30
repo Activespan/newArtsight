@@ -6,7 +6,7 @@ const Content = () => {
   const [item, setItem] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/v1/picture/${id}`)
+    fetch(`http://146.190.165.81:8000/api/v1/picture/${id}`)
       .then((response) => response.json())
       .then((data) => setItem(data.data));
   }, [id]);
@@ -20,7 +20,10 @@ const Content = () => {
         <div className="col-lg-7">
           <div className="shop-detail-image">
             <div className="detail-slider">
-              <img src={`http://localhost:8000/media/${item.url}`} alt="" />
+              <img
+                src={`http://146.190.165.81:8000/media/${item.url}`}
+                alt=""
+              />
             </div>
           </div>
         </div>

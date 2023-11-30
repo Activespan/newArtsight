@@ -7,7 +7,7 @@ const Shopsidebar = () => {
   const [recentProducts, setRecentProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/v1/pictures")
+    fetch("http://146.190.165.81:8000/api/v1/pictures")
       .then((response) => response.json())
       .then((data) => {
         data.data.second.forEach((item) => {
@@ -29,7 +29,7 @@ const Shopsidebar = () => {
             <div className="thumb-img">
               <Link to={"/shop-details/" + item.id}>
                 <img
-                  src={"http://localhost:8000/media/" + item.url}
+                  src={"http://146.190.165.81:8000/media/" + item.url}
                   alt={item.title}
                 />
               </Link>

@@ -14,7 +14,7 @@ const Content = () => {
   const [secondProducts, setSecondProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/v1/pictures")
+    fetch("http://146.190.165.81:8000/api/v1/pictures")
       .then((response) => response.json())
       .then((data) => {
         setFirstProducts(data.data.first);
@@ -39,7 +39,9 @@ const Content = () => {
                         <div className="product-img">
                           <Link to={"/shop-details/" + item.id}>
                             <img
-                              src={"http://localhost:8000/media/" + item.url}
+                              src={
+                                "http://146.190.165.81:8000/media/" + item.url
+                              }
                               className="img-fluid full-width"
                               alt={item.title}
                             />
@@ -139,7 +141,9 @@ const Content = () => {
                         <div className="product-img">
                           <Link to={"/shop-details/" + item.id}>
                             <img
-                              src={"http://localhost:8000/media/" + item.url}
+                              src={
+                                "http://146.190.165.81:8000/media/" + item.url
+                              }
                               className="img-fluid full-width"
                               alt={item.title}
                             />
