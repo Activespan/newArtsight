@@ -33,12 +33,11 @@ Theme Name: NINA - Museum E-commerce HTML5 Template.
 10.Final Order
 12.About Us
 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-/*======================
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');/*======================
 1.General Code
 ========================*/
 *{
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Cinzel', serif !important;
 
 }
 html {
