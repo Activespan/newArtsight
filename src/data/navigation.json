@@ -11,12 +11,17 @@
     },
     {
         "id": 3,
+        "link": "/board",
+        "linkText": "Board"
+    },
+    {
+        "id": 3,
         "linkText": "Shop",
         "link": "/shop"
     },
     {
         "id": 5,
-        "linkText": "Add Gallery",
+        "linkText": "Submit",
         "link": "/add-gallery"
     }
 ]

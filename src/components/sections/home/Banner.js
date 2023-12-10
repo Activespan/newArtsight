@@ -50,12 +50,20 @@ class Banner extends Component {
 
                       <h1 className="text-white fw-400">{item.text}</h1>
                       <Link
-                        to="/add-gallery"
+                        to="/shop"
                         className="btn-solid with-line btn-big mt-20 mr-1"
                       >
                         <span>
-                          ADD GALLERY
-                          <i className="fas fa-caret-right" />
+                          Explore
+                        </span>
+                      </Link>
+
+                      <Link
+                          to="/add-gallery"
+                          className="btn-solid with-line btn-big mt-20 mr-1"
+                      >
+                        <span>
+                          SUBMIT
                         </span>
                       </Link>
                     </div>

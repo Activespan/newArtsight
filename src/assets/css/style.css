@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+html{
+  font-family: 'Montserrat';font-size: 22px !important;
+}
 /*
 Theme Name: NINA - Museum E-commerce HTML5 Template.
 
@@ -31,12 +33,14 @@ Theme Name: NINA - Museum E-commerce HTML5 Template.
 10.Final Order
 12.About Us
 */
-@import url("https://fonts.googleapis.com/css?family=Prata&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 /*======================
 1.General Code
 ========================*/
+*{
+  font-family: 'Montserrat', sans-serif !important;
 
+}
 html {
   overflow-x: hidden;
 }
@@ -45,7 +49,8 @@ button:focus,
   outline: none;
 }
 body {
-  font-family: "Muli";
+  font-family: 'Montserrat', sans-serif !important;
+
   margin: 0px;
   padding: 0px;
   font-size: 13px;
@@ -6930,9 +6935,7 @@ footer .footer-links .contact-info li a span {
   background-size: cover;
   background-position: center center;
 }
-.why {
-  background-image: url("../img/banner/about_2.jpg");
-}
+
 
 .what {
   background-image: url("../img/banner/about_3.jpg");
@@ -6940,14 +6943,4 @@ footer .footer-links .contact-info li a span {
 
 .how {
   background-image: url("../img/banner/about_4.jpg");
-}
-
-.why-left {
-  background-color: rgba(0, 0, 0, 0.6);
-  /* padding: 100px 0; */
-}
-
-.why-left h3,
-.why-left h5 {
-  color: white;
 }

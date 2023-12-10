@@ -11,7 +11,7 @@ class Home extends Component {
     return (
       <Fragment>
         <MetaTags>
-          <title>Nina - Museum & Shop - React Template | {pagelocation}</title>
+          <title>ARTINSIGHT.ORG || HOME</title>
           <meta name="description" content="#" />
         </MetaTags>
         <Header />

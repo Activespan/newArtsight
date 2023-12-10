@@ -4,6 +4,7 @@ import Profile from "./components/pages/Profile";
 
 // Home
 const Home = React.lazy(() => import("./components/pages/Home"));
+const Board = React.lazy(() => import("./components/pages/Board"));
 
 const About = React.lazy(() => import("./components/pages/About"));
 // Events
@@ -53,6 +54,7 @@ function App() {
         <ScrollToTop>
           {/* Home */}
           <Route exact path="/" component={Home} />
+          <Route exact path="/board" component={Board} />
           {/* About */}
           <Route exact path="/about" component={About} />
           {/* Events */}

@@ -11,9 +11,32 @@ class Content extends Component {
     return (
       <Fragment>
         <Banner />
-        <Servicetype />
-        <Team />
-        <Bestsellers />
+        {/*<Team />*/}
+        {/*<Bestsellers />*/}
+          <div className={"home-title"}>
+              <h2>ArtInsight is a platform that:</h2>
+          </div>
+          <div className={"collapse-1"}>
+              <b><h3>Connects Artists and Art Lovers:</h3></b>
+              <h5>We provide a space for artists to showcase their work to a global audience, making it easy for art enthusiasts
+                  to discover and appreciate exceptional art.
+              </h5>
+          </div>
+          <div className={"collapse-container"}>
+              <div className={"collap"}>
+                  <b><h3>Connects Artists and Art Lovers:</h3></b>
+                  <h5>We provide a space for artists to showcase their work to a global audience, making it easy for art enthusiasts
+                      to discover and appreciate exceptional art.
+                  </h5>
+              </div>
+              <hr />
+              <div className={"collap"}>
+                  <b><h3>Connects Artists and Art Lovers:</h3></b>
+                  <h5>We provide a space for artists to showcase their work to a global audience, making it easy for art enthusiasts
+                      to discover and appreciate exceptional art.
+                  </h5>
+              </div>
+          </div>
         <Videocta />
         <Advertisement />
       </Fragment>
