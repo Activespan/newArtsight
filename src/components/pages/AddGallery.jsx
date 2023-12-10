@@ -12,7 +12,7 @@ const AddGallery = () => {
         <meta name="description" content="#" />
       </MetaTags>
       <Header />
-      <Breadcrumb breadcrumb={{ pagename: "Add Gallery" }} />
+      <Breadcrumb breadcrumb={{ pagename: "submit" }} />
       <AddGalleryContent />
       <Footer />
     </Fragment>

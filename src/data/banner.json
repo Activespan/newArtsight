@@ -3,10 +3,9 @@
         "id": 1,
         "image": "assets/img/banner/banner1.jpg",
         "title": "artwork  that speaks to your soul",
-        "subtitle": "FIND THE",
+        "subtitle": "find the",
         "description": "from the comfort of your home.",
         "text": "explore, discover, enjoy",
-        "position": "col-lg-12",
-        "extraclass": "right-side-content far-right"
+        "position": "col-lg-12"
     }
 ]

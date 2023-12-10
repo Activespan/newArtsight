@@ -56,8 +56,8 @@ class Advertisement extends Component {
         <div className="container-fluid custom-container">
           <div className="row">
             <div className="col-12">
-              <h2 className="we-do-title">what we do?</h2>
-              <h5 className="we-do-text">
+              <h2 className="we-do-title" style={{fontFamily:"'Cinzel', serif"}}>what we do?</h2>
+              <h5 className="we-do-text" style={{fontFamily:"'Montserrat', sans-serif"}}>
                 ArtInsight transcends boundaries to redefine the art experience.
                 We are the bridge between imagination and reality, a platform
                 where artists' dreams materialize, and art lovers embark on

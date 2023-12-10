@@ -77,29 +77,29 @@ const Content = () => {
                           <div className="product-status">
                             <ul className="product-raised">
                               <li>
-                                <strong>Material</strong> {item.material}
+                                <strong style={{fontFamily:"'Cinzel', serif"}}>Material</strong> {item.material}
                               </li>
                               <li>
                                 <strong>Width</strong>
-                                <span className="text-highlight">
+                                <span className="text-highlight" style={{fontFamily:"'Cinzel', serif"}}>
                                   {item.width}mm
                                 </span>
                               </li>
                             </ul>
                             <ul className="product-raised">
                               <li>
-                                <strong>Price</strong>
+                                <strong style={{fontFamily:"'Cinzel', serif"}}>Price</strong>
                                 {item.sales_value}$
                               </li>
                               <li>
-                                <strong>Height</strong>
+                                <strong style={{fontFamily:"'Cinzel', serif"}}>Height</strong>
                                 <span className="text-highlight">
                                   {item.height}mm
                                 </span>
                               </li>
                             </ul>
                           </div>
-                          <h6 className="product-title fw-500 mt-10">
+                          <h6 className="product-title fw-500 mt-10" style={{fontFamily:"'Cinzel', serif"}}>
                             <Link
                               to={"/shop-details/" + item.id}
                               className="text-color-secondary"
@@ -177,18 +177,18 @@ const Content = () => {
                         </div>
                         <div className="product-caption text-center">
                           <div className="product-status">
-                            <ul className="product-raised">
+                            <ul className="product-raised" style={{fontFamily:"'Cinzel', serif"}}>
                               <li>
-                                <strong>Material</strong> {item.material}
+                                <strong >Material</strong> {item.material}
                               </li>
-                              <li>
+                              <li style={{fontFamily:"'Cinzel', serif"}}>
                                 <strong>Width</strong>
                                 <span className="text-highlight">
                                   {item.width}mm
                                 </span>
                               </li>
                             </ul>
-                            <ul className="product-raised">
+                            <ul style={{fontFamily:"'Cinzel', serif"}} className="product-raised">
                               <li>
                                 <strong>Price</strong>
                                 {item.sales_value}$
@@ -201,7 +201,7 @@ const Content = () => {
                               </li>
                             </ul>
                           </div>
-                          <h6 className="product-title fw-500 mt-10">
+                          <h6 style={{fontFamily:"'Cinzel', serif"}} className="product-title fw-500 mt-10">
                             <Link
                               to={"/shop-details/" + item.id}
                               className="text-color-secondary"

@@ -5,7 +5,7 @@ import Footer from "../layouts/Footer";
 import Breadcrumb from "../layouts/Breadcrumbs";
 import Content from "../sections/shop-left/Content";
 
-const pagelocation = "Shop";
+const pagelocation = "shop";
 
 class Shopleft extends Component {
   render() {

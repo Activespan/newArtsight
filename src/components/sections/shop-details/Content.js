@@ -30,12 +30,12 @@ const Content = () => {
         <div className="col-lg-5">
           <div className="shop-detail-contents mb-md-40 mt-md-40">
             <div className="shop-detail-content-wrapper">
-              <h6 className="text-custom-black">{item.title}</h6>
+              <h6 className="text-custom-black" style={{fontFamily:"'Cinzel', serif"}}>{item.title}</h6>
             </div>
 
             <div className="price">
               <h5 className="text-light-green price-tag">
-                <span className="text-custom-primary price-tag mr-2">
+                <span className="text-custom-primary price-tag mr-2" style={{fontFamily:"'Montserrat', sans-serif"}}>
                   ${item.sales_value}
                 </span>
               </h5>
@@ -44,48 +44,48 @@ const Content = () => {
               <p className="text-custom-black fw-600">
                 Author:
                 <Link to={`/profile/${item.user_id}`}>
-                  <span className="text-success ml-2">{item.user}</span>
+                  <span className="text-success ml-2" style={{fontFamily:"'Montserrat', sans-serif"}}>{item.user}</span>
                 </Link>
               </p>
             </div>
             <div className="product-full-des mb-20">
               <p className="text-custom-black fw-600">
                 Width:
-                <span className="text-success ml-2">{item.width}mm</span>
+                <span className="text-success ml-2" style={{fontFamily:"'Montserrat', sans-serif"}}>{item.width}mm</span>
               </p>
             </div>
             <div className="product-full-des mb-20">
-              <p className="text-custom-black fw-600">
+              <p className="text-custom-black fw-600" style={{fontFamily:"'Montserrat', sans-serif"}}>
                 Height:
                 <span className="text-success ml-2">{item.height}mm</span>
               </p>
             </div>
             <div className="product-full-des mb-20">
-              <p className="text-custom-black fw-600">
+              <p className="text-custom-black fw-600" style={{fontFamily:"'Montserrat', sans-serif"}}>
                 material:
                 <span className="text-success ml-2">{item.material}</span>
               </p>
             </div>
             <div className="product-full-des mb-20">
-              <p className="text-custom-black fw-600">
+              <p className="text-custom-black fw-600" style={{fontFamily:"'Montserrat', sans-serif"}}>
                 Purpose:
                 <span className="text-success ml-2">{item.purpose}</span>
               </p>
             </div>
             <div className="product-full-des mb-20">
-              <p className="text-custom-black fw-600">
+              <p className="text-custom-black fw-600" style={{fontFamily:"'Montserrat', sans-serif"}}>
                 Description:
                 <span className="text-success ml-2">{item.description}</span>
               </p>
             </div>
             <div className="availibity mt-20">
-              <p className="text-custom-black fw-600">
+              <p className="text-custom-black fw-600" style={{fontFamily:"'Montserrat', sans-serif"}}>
                 Avability:
                 <span className="text-success ml-2">In Stock</span>
               </p>
             </div>
             <div className="availibity mt-20">
-              <p className="text-custom-black fw-600">
+              <p className="text-custom-black fw-600" style={{fontFamily:"'Montserrat', sans-serif"}}>
                 Added Date:
                 <span className="text-success ml-2">{item.date}</span>
               </p>

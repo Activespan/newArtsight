@@ -327,14 +327,14 @@ const Content = () => {
                           <h6 className="mb-0">{item.title}</h6>
                           <div className="row">
                             <div className="col-md-6">
-                              <p className="m-0">Material: {item.material}</p>
-                              <p className="m-0">
+                              <p className="m-0" style={{fontFamily:"'Montserrat', sans-serif"}}>material: {item.material}</p>
+                              <p className="m-0" style={{fontFamily:"'Montserrat', sans-serif"}}>
                                 Sales value: {item.sales_value}{" "}
                               </p>
                             </div>
                             <div className="col-md-6">
-                              <p className="m-0">Width: {item.width}</p>
-                              <p className="m-0">Height: {item.height}</p>
+                              <p className="m-0" style={{fontFamily:"'Montserrat', sans-serif"}}>Width: {item.width}</p>
+                              <p className="m-0" style={{fontFamily:"'Montserrat', sans-serif"}}>Height: {item.height}</p>
                             </div>
                           </div>
                         </div>

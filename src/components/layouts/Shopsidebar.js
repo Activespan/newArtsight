@@ -23,7 +23,7 @@ const Shopsidebar = () => {
   return (
     <div className="side-bar">
       <div className="main-box padding-20 side-shop mb-xl-20">
-        <h5 className="text-light-black">Recent Products</h5>
+        <h5 className="text-light-black" style={{fontFamily:"'Cinzel', serif"}}>recent products</h5>
         {recentProducts.map((item, i) => (
           <article className="side-post pb-xl-20 mb-xl-20 u-line" key={i}>
             <div className="thumb-img">
